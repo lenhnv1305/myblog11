@@ -22,6 +22,7 @@ function auth_register(){
     if (isPostRequest()){
         $postData = postData();
         /*var_dump($postData);die;*/
+        
         if (model('nguoidung')->authRegister($postData)){
             redirect('index.php?c=homepage&m=home');
         } else {

@@ -48,7 +48,8 @@
 	*/
 
 	$comments = array();
-	$result = mysql_query("SELECT * FROM binhluan ORDER BY Ngay desc");
+	$sql = "SELECT * FROM binhluan WHERE blog_id = '" . $d['id']. "' ORDER BY Ngay desc";
+	$result = mysql_query($sql);
 
 	while($row = mysql_fetch_assoc($result))
 	{
