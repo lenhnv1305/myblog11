@@ -7,7 +7,6 @@ class Nguoidung extends Model{
 
 		$user = static::getOneBy($postData['email'], 'Email');
 
-		
 
 		if ($user && $user['MatKhau'] == md5($postData['password'])){
 			unset($user['MatKhau']);
@@ -38,6 +37,7 @@ class Nguoidung extends Model{
 		}
 	}
 	public function authLogout(){
+		
 		unset ($_SESSION['Logged']);
 		session_destroy();
 	}

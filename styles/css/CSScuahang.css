@@ -1,0 +1,181 @@
+#main {
+            margin-left: 12%;
+            width: 1000px;
+        }
+        #thongtinlienhe ul li{
+            display: inline;
+            margin-right: 10px;
+            color: white;
+        }
+        #thongtinlienhe ul{
+            float: right;
+        }
+        #thongtinlienhe {
+            float: right;
+        }
+        #list-danhmuc1 li {
+            display: inline;
+            margin-right: 10px;
+            border-right: solid;
+            padding-right: 10px;
+            border-width: 1px;
+            font-size: 14pt;
+        }
+        #list-danhmuc1{
+        
+            margin-left: -40px;
+        }
+        h2 {
+            background-color: black;
+        }
+        #danhmuc2 ul li {
+            background-color: #F6F5F5;
+            list-style: none;
+            margin-left: -30px;
+            margin-button: 10px;
+            border-bottom: solid;
+            border-width: 1px;
+        }
+        #danhmuc2{
+            width: 190px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #danhmuc1{
+            background-color: #EC3030;
+        }
+        #noidungbenphai {
+            width: 810px;
+            float: right;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        #thongtinlienhe{
+            background-color: #494949;
+            width: 1000px;
+        }
+        
+        section {
+            width:805px;
+            margin-left: 195px;
+        }
+        #sliderarea{
+            height: 300px;
+        }
+        #noidung{
+            position: relative;
+        }
+        #footer{
+            width: 100%;
+            height: 80px;
+            height: auto;
+            position:fixed;
+            left: 0;
+            bottom: 0;
+            text-align: center;
+            padding: 2px;
+            background-color: #f1dfdf;
+        }
+        #noidungdienthoai {
+            margin-top: 60px;
+        }
+        .noidungsection {
+            position: relative;
+            
+        }   
+        .noidungsection p {
+            border: solid #EC3030;;
+            width: 805px;
+            margin-top: -25px;
+        }
+        
+        h4 {
+            background-color: #EC3030;;
+            padding: 6px;
+            width: 150px;
+        }
+        
+        #main2 {
+            position: relative;
+        }
+        #quangcaotrai {
+            position: fixed;
+            left: 0;
+            top: 100px;
+        }
+        #quangcaophai {
+            position: fixed;
+            right: 0;
+            top: 100px;
+        }
+        #quangcaophai img{
+            width: 160px;
+        }
+        #quangcaotrai img{
+            width: 160px;
+        }
+        
+        #sanphamdt {
+            position: relative;
+            width: 300px;
+            height: 200px;
+        }
+        #hinhdt {
+            position: absolute;
+            left: 0;
+        }
+        #hinhdt img {width: 160px; height: 180px;}
+        #thongtindt {
+            position: absolute;
+            right: 0;
+        }
+        #thongtindt ul li {
+            font-size: 8pt;
+        }
+        
+        #danhmuc2{
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+        
+        #danhmuc2 > ul {
+            margin-top: -25px;
+            margin-left: 38px;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        

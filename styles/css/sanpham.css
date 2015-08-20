@@ -1,0 +1,24 @@
+	.box1{
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 18px;
+	margin-bottom: 35px;
+	}
+	.box1 > img {
+		width: 90px;
+		height:190px;
+		padding: 10px;
+		float: left;
+	}
+	.box1 > div > ul > li {
+		font-size: 8pt;
+		padding: 1px;
+		list-style: red;
+	}
+	.box1 > div > ul {
+		margin-left: 40px;
+	}
+	

@@ -5,7 +5,11 @@ function auth_login() {
     
     if (isPostRequest()) {
         $postData = postData();
-        if (model('nguoidung')->authLogin($postData)) {
+        $user = model('nguoidung')->authLogin($postData);
+        if ($user) {
+            if ($user['role'] == '1'){
+                redirect('/index.php?c=admin&m=home');
+            }
             redirect('/index.php?c=homepage&m=home');
         } else {
             $data['error'] = 'Login failed ! Please try again !';

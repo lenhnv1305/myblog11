@@ -23,8 +23,8 @@
 		}
 
 		public function deleteOne($model_id){
-			$id = " id = " . $model_id;
-			return db_delete($this->table, $id);
+			
+			return db_delete($this->table, $model_id);
 		}
 	}
 ?>

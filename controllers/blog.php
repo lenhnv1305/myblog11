@@ -33,7 +33,7 @@ function blog_xoa(){
 	$blog_id = $_POST['formBlogId'];
 	//var_dump($blog_id);die();
 
-	model('baiviet')-> deleteOne($blog_id);
+	model('baiviet')-> deleteOne(" id = '" .$blog_id) ."'";
 
 	blog_list();
 

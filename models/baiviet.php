@@ -24,6 +24,7 @@ class Baiviet extends Model{
 		$postData['NgayDang'] = date("Y-m-d");
 		$postData['user_id'] = $user_id;
 
+		/*var_dump($postData);die;*/
 		return db_insert($this->table, $postData);
 	}
 	public function updateBaiViet($postData, $user_id){
