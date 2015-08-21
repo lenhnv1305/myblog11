@@ -1,5 +1,5 @@
 <?php
-    
+
 function auth_login() {
     $data = array();
     
@@ -8,7 +8,13 @@ function auth_login() {
         $user = model('nguoidung')->authLogin($postData);
         if ($user) {
             if ($user['role'] == '1'){
+                $_SESSION['Logged'] = $user;
+                $_SESSION['GioHang'] = array();
                 redirect('/index.php?c=admin&m=home');
+            }
+            if($user['role'] == '0'){
+                $_SESSION['Logged'] = $user;
+                $_SESSION['GioHang'] = array();
             }
             redirect('/index.php?c=homepage&m=home');
         } else {

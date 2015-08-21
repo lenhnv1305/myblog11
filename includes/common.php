@@ -42,4 +42,55 @@ function redirect($to_url){
 	header('Location: ' . $to_url);
 	exit();
 }
+class GioHang{
+	private $id_sp=0;
+	private $gia =0;
+	private $tenSP="";
+	private $soLuong = 0;
+	private $hinhAnh = "";
+	private $thanhTien;
+
+	public function xoaMotSP(){
+		if ($this->soLuong > 0){
+			$soLuong--;
+		}
+	}
+	public function themMoiMotSP($id_sp, $tenSP, $gia, $hinhAnh, $soLuong){
+		$this->id_sp = $id_sp;
+		$this->gia = $gia;
+		$this->tenSP = $tenSP;
+		$this->hinhAnh = $hinhAnh;
+		$this->soLuong = $soLuong;
+
+		$this->thanhTien = $this->gia * $this->soLuong;
+	}
+	public function updateSoLuong($soLuong){
+		$this->soLuong = $soLuong;
+
+		$this->thanhTien = $this->gia * $this->soLuong;
+	}
+	public function themCungMotSP(){
+		$this->soLuong = $this->soLuong + 1;
+
+		$this->thanhTien = $this->gia * $this->soLuong;
+	}
+	public function getID_SP(){
+		return $this->id_sp;
+	}
+	public function getGia(){
+		return $this->gia;
+	}
+	public function getTenSP(){
+		return $this->tenSP;
+	}
+	public function getSoLuong(){
+		return $this->soLuong;
+	}
+	public function getHinhAnh(){
+		return $this->hinhAnh;
+	}
+	public function getThanhTien(){
+		return $this->thanhTien;
+	}
+}
 ?>

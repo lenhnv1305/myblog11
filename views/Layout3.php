@@ -14,6 +14,9 @@
     <!-- chèn css cho bootstap slider-->
     <link rel="stylesheet" type="text/css" href="../styles/css/CSScuahang.css"/>
     <link rel="stylesheet" type="text/css" href="../styles/css/sanpham.css"/>
+    <!-- chèn font awesome-->
+    <link rel="stylesheet" href="../styles/font-awesome-4.4.0/css/font-awesome.min.css">
+    
 </head>
 <body>
   <div class='container'>
@@ -26,6 +29,7 @@
             <li><a href="#">Xin chào <strong><?php echo $logged['Ten']; ?></strong></a></li>
             <li class=""><a href="index.php?c=admin&m=home">Quản trị sản phẩm</a></li>
             <li><a href="index.php?c=blog&m=list">Quản lý blog của bạn</a></li>
+            <li><a href="#" > ()<i class="fa fa-opencart"></i></a></li>
             <li><a href="index.php?c=auth&m=logout">Đăng xuất</a></li>
             <?php else: ?>
             <li><a href="index.php?c=auth&m=login">Đăng nhập</a></li>

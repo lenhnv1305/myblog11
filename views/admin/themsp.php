@@ -3,7 +3,7 @@
   <div class="control-group">
     <label class="control-label" for="inputName">Tên sản phẩm</label>
     <div class="controls">
-      <input type="text" id="inputTenSP" placeholder="Tên tiêu đề" name="TenSP" />
+      <input type="text" id="inputTenSP" placeholder="Tên sản phẩm" name="TenSP" />
     </div>
   </div>
    <div class="control-group">

@@ -138,6 +138,7 @@
         #danhmuc2{
             margin-left: 100px;
             margin-top: 50px;
+            box-shadow: 10px 10px 5px #888888;
         }
         
         #danhmuc2 > ul {
