@@ -11,3 +11,16 @@
 <a href="http://upanhviet.net/?pt=M9RT" title="Them moi 1 blog" ><img src="http://upanhviet.net/?dt=M9RT" alt="Them moi 1 blog" /></a>
 <h3>6. Chỉnh sửa thông tin của 1 blog</h3>
 <a href="http://upanhviet.net/?pt=M6P5" title="chinh sua" ><img src="http://upanhviet.net/?dt=M6P5" alt="chinh sua" /></a>
+<h3>7. Trang giỏ hàng </h3>
+<img src="http://www.upsieutoc.com/images/2015/08/21/giohang.jpg" border="0">
+<h3>8. Trang bán hàng hàng </h3>
+<img src="http://www.upsieutoc.com/images/2015/08/22/Trangbanhang.jpg" border="0">
+<h3>9. Quản lý sản phẩm </h3>
+<img src="http://www.upsieutoc.com/images/2015/08/22/quanlysanpham.jpg" border="0">
+<h3>10. Thêm sản phẩm </h3>
+<img src="http://www.upsieutoc.com/images/2015/08/22/themmoisanpham.jpg" border="0">
+<h3>11. sửa sản phẩm </h3>
+<img src="http://www.upsieutoc.com/images/2015/08/22/suamotsanpham.jpg" border="0">
+<h3>12. xóa sản phẩm </h3>
+<img src="http://www.upsieutoc.com/images/2015/08/22/xoamotsanpham.jpg" border="0">
+
