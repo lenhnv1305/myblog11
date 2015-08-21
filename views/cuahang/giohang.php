@@ -27,7 +27,7 @@
 			<form method='post' action='index.php?c=cuahang&m=xoasp'>	
 			<td>
 				<input name='<?php echo "id_sp".$g->getID_SP(); ?>'type='hidden' value='<?php echo $g->getID_SP();?>'></input>
-				<input type='submit' value = 'Xóa'></input>
+				<input type='submit' class='btn btn-danger' value = 'Xóa'></input>
 			</td>
 			</form>	
 			<script>
