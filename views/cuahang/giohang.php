@@ -1,7 +1,8 @@
 <div style='margin-left: 10px'>
 	<h2>Giỏ hàng</h2>
 	<a href="index.php?c=cuahang&m=home" class='btn btn-success' style='color: white'>Tiếp tục mua hàng</a>
-	<input type='submit' class = 'btn btn-success' value='Thanh toán'></input>
+	<a href="index.php?c=cuahang&m=thanhtoan" class = 'btn btn-success' style='color: white'>Thanh toán</a>
+	<a href="index.php?c=cuahang&m=dathanhtoan" class = 'btn btn-success' style='color: white'>Giỏ hàng đã thanh toán</a>
 	<table class = 'table table-bordered' style='margin-top: 10px;'>
 		<tr>
 			<th>Tên điện thoại</th>

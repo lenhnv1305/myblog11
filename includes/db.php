@@ -15,6 +15,7 @@ function db_get_all($sql){
 	$result = mysql_query($sql);
 	$data = array();
 
+	// var_dump($sql);die();
 	if ($result){
 		while ($row = mysql_fetch_assoc($result)){
 			$data[] = $row;
@@ -49,7 +50,7 @@ function db_update($table, $data, $where){
 
 	$sql = "update `{$table}` set " . implode(", ", $sets) . " where {$where}";
 
-	/*var_dump($sql);die;*/
+	// var_dump($sql);die;
 	mysql_query($sql);
 
 	return mysql_affected_rows();

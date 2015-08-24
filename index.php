@@ -24,7 +24,14 @@ $m_func = $controller . '_' . $method;
 
 if (is_readable($c_file)) {
     include $c_file;
-    call_user_func($m_func);
+    if(is_callable($m_func))
+    {
+   	 call_user_func($m_func);
+	}
+	else
+	{
+		  die("Page not found !");
+	}
 } else {
     die("Page not found !");
 }

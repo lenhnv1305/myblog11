@@ -22,6 +22,11 @@
 		font-size: 8pt;
 		padding: 1px;
 		list-style: red;
+		width: 100px;
+
+	}
+	.box1 > section {
+		width: 21px;
 	}
 	.box1 > section > ul {
 		margin-left: -80px;

@@ -4,6 +4,7 @@ session_start();
 require 'db.php';
 require 'models/model.php';
 
+
 function model ($model){
 	static $models = array();
 	$model = strtolower($model);
@@ -42,7 +43,8 @@ function redirect($to_url){
 	header('Location: ' . $to_url);
 	exit();
 }
-class GioHang{
+
+class GioHangTemp {
 	private $id_sp=0;
 	private $gia =0;
 	private $tenSP="";
@@ -92,5 +94,7 @@ class GioHang{
 	public function getThanhTien(){
 		return $this->thanhTien;
 	}
+
+	
 }
 ?>

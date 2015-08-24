@@ -29,7 +29,7 @@
             <li><a href="#">Xin chào <strong><?php echo $logged['Ten']; ?></strong></a></li>
             <li class=""><a href="index.php?c=admin&m=home">Quản trị sản phẩm</a></li>
             <li><a href="index.php?c=blog&m=list">Quản lý blog của bạn</a></li>
-            <li><a href="#" > ()<i class="fa fa-opencart"></i></a></li>
+            <li><a href="index.php?c=admin&m=xacnhan" >() Xác nhận đơn hàng</a></li>
             <li><a href="index.php?c=auth&m=logout">Đăng xuất</a></li>
             <?php else: ?>
             <li><a href="index.php?c=auth&m=login">Đăng nhập</a></li>

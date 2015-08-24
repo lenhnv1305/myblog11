@@ -124,4 +124,39 @@ function uploadFile(){
 	}
 	return "";
 }
+
+function admin_xacnhan(){
+	$data = array();
+
+	$user = isLogged();
+
+	if ($user){
+		$data['dienthoai'] = model('giohang')->getSPNguoi_Ngay(date("Y-m-d"));
+	}
+
+	$data['template_file'] = "admin/xacnhan.php";
+
+	render("Layout3.php",$data);
+}
+function admin_xoaSPGioHang(){
+	$postData = postData();
+
+	$keyPost = key($postData);
+
+// var_dump($keyPost);die();
+	if ($keyPost){
+		model('giohang')->deleteOne($postData[$keyPost]);
+		redirect("index.php?c=admin&m=xacnhan");
+	}
+}
+function admin_confirm(){
+	$postData = postData();
+
+	$keyPost = key($postData);
+	// var_dump($postData);die();
+	if ($keyPost){
+		model('giohang')->updateThanhToan($postData[$keyPost], 1);
+		redirect("index.php?c=admin&m=xacnhan");
+	}
+}
 ?>

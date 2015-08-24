@@ -9,7 +9,7 @@ function cuahang_home(){
 }
 function cuahang_chovaogio(){
 	$postData = postData();
-	$dienthoai = new GioHang();
+	$dienthoai = new GioHangTemp();
 	
 	/*var_dump($postData);die;*/
 	$i = 0;
@@ -84,5 +84,45 @@ function cuahang_xoasp(){
 			redirect("index.php?c=cuahang&m=xemgiohang");
 		}
 	}
+}
+// người mua xac nhận mua hàng
+function cuahang_thanhtoan(){
+	$data = array();
+	$user = isLogged();
+
+	if (isPostRequest()){
+		foreach ($_SESSION['GioHang'] as $key => $value){
+			$data[] = array('user_id' => $user['id'], 
+							'sp_id' => $value->getID_SP(),
+							'TenSP' => $value->getTenSP(),
+							'Ngay'  => date("Y-m-d")
+							);
+
+		}
+		
+		foreach ($data as $key => $value) {
+			// var_dump($data);die();
+			model('giohang')->addBill($value);
+
+		}
+		
+		foreach ($_SESSION['GioHang'] as $key => $value) {
+			unset($_SESSION['GioHang'][$key]);
+		}
+	}
+	$data['template_file'] = "cuahang/thanhtoan.php";
+
+	render("Layout2.php", $data);
+}
+function cuahang_dathanhtoan(){
+	$data = array();
+
+	$user = isLogged();
+
+	$data['dienthoai'] = model('giohang')->getDonHangUser($user['id'], date("Y-m-d"));
+
+// var_dump($data);die();
+	$data['template_file'] = "cuahang/dathanhtoan.php";
+	render('Layout2.php', $data);
 }
 ?>
